@@ -2,27 +2,23 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div className='px-4 py-12 max-w-2xl mx-auto'>
+   
+    <div className='px-4 py-4 max-w-2xl max-h-full mx-auto'>
       <h1 className='text-3xl font-bold  mb-4 text-slate-800'>
-        Welcome to my Auth App!
+        Welcome to our Final Year Project!
       </h1>
-      <p className='mb-4 text-slate-700'>
-        This is a full-stack web application built with the MERN (MongoDB,
-        Express, React, Node.js) stack. It includes authentication features that
-        allow users to sign up, log in, and log out, and provides access to
-        protected routes only for authenticated users.
-      </p>
-      <p className='mb-4 text-slate-700'>
-        The front-end of the application is built with React and uses React
-        Router for client-side routing. The back-end is built with Node.js and
-        Express, and uses MongoDB as the database. Authentication is implemented
-        using JSON Web Tokens (JWT).
-      </p>
-      <p className='mb-4 text-slate-700'>
-        This application is intended as a starting point for building full-stack
-        web applications with authentication using the MERN stack. Feel free to
-        use it as a template for your own projects!
-      </p>
+      <p className='text-1xl   mb-4 text-slate-800'>Dive into the intricate details of our final year project, a culmination of months of hard work, creativity, and dedication. Explore how our combined skills and unique perspectives have converged to create a solution that addresses real-world challenges.</p>
+      <h2 className='text-2xl font-bold  mb-4 text-slate-800'>Project Highlights:</h2>
+      <ul className='text-slate-800 mb-4'>
+        <li><span className='font-bold'>Innovative Concept:</span> Discover the core concept that sets our project apart from the rest.</li>
+        <li><span className='font-bold'>Technological Expertise:</span> Explore the cutting-edge technologies and tools we employed to bring our vision to life.</li>
+        <li><span className='font-bold'>Collaborative Process:</span> Learn about our collaborative approach, highlighting how each team member's strengths contributed to the project's success.</li>
+        <li><span className='font-bold'>Challenges and Solutions:</span> Navigate through the challenges we encountered and the ingenious solutions we devised to overcome them.</li>
+      </ul>
+      <h2 className='text-2xl font-bold  mb-4 text-slate-800'>Project Team Members:</h2>
+      <h3 className='uppercase mb-4 text-slate-800'>Sathyamoorthy R * Tharun R * Preethiviraj M</h3>
+    
     </div>
+    
   );
 }
