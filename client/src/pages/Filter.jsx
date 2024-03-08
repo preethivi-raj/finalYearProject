@@ -6,17 +6,18 @@ function Filter() {
     
 const { currentUser } = useSelector((state) => state.user);
 const [filteredData , setFilteredData] = useState([])
-var id = '';
-if(currentUser.username == 'Ram'){
+var id ;
+if(currentUser.username == 'ram'){
   id='1.00000'
 }
-else if(currentUser.username == 'Sam')
+if(currentUser.username == 'akhil')
 {
   id='2.00000'
 }
-else if(currentUser.username == 'Prem'){
+if(currentUser.username == 'sajad'){
   id='3.00000'
 }
+console.log(id);
   fetch("https://api.thingspeak.com/channels/2385609/feed.json?api_key=VSGL2EXJZ6S3KZXW")
  .then(response => response.json())
   .then(data => {
@@ -35,7 +36,7 @@ function items(data){
         {filteredData.map((obj, index) => (
           <li key={index}>
             <div>
-              <p>{`Time: ${obj.created_at}   Balance: ${obj.field2}   Ammout Reduced: ${obj.field3}`}</p>
+              <p className="mt-2 text-center text-m mb-4 text-black-500 bg-slate-200 break-words">{`Time: ${obj.created_at} - INR ${obj.field3}`}</p>
             </div>
           </li>
         ))}
