@@ -36,7 +36,8 @@ function items(data){
         {filteredData.map((obj, index) => (
           <li key={index}>
             <div>
-              <p className="mt-2 text-center text-m mb-4 text-black-500 bg-slate-200 break-words">{`Time: ${obj.created_at} - INR ${obj.field3}`}</p>
+              
+              <p className="mt-2 text-center text-m mb-4 text-black-500  ">{`Time :  ${obj.created_at}   -    INR ${obj.field3}`}</p>
             </div>
           </li>
         ))}
